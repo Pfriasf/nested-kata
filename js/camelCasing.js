@@ -10,8 +10,10 @@ camelCasing("camelCasingTest")// camel Casing Test
 
 
 
-const camelCasing = () => {
-
+const camelCasing = (str) => {
+    if (str === "") {
+        return ""
+    }
 }
 
 module.exports = camelCasing
