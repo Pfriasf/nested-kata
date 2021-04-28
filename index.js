@@ -15,7 +15,17 @@ const generateArray = (str) => {
         return []
     }
 
+    strArr.forEach((element, index) => {
+        let prev = strArr[index - 1]
 
+        if (index == 0) {
+            response.push([1, element])
+        } else if (element !== prev) {
+            response.push([1, element])
+        } else {
+            response[response.length - 1][0] += 1
+        }
+    })
 
     return response
 }

@@ -13,9 +13,10 @@ describe('Generate Array function', () => {
 
     });
 
-    it("Should return an array that sums all the repeating characters", () => {
+    it("Should return an array that sums all the repeating characters even if the same element is repeated somewhere else in the string", () => {
 
       expect(generateArray("aaaaaaaabaaaa")).toEqual([[8,'a'], [1,'b'], [4,'a']]);
       
     });
+
 })
