@@ -8,11 +8,16 @@ compress('aaaaaaaabaaaa') // [[8,'a'], [1,'b'], [4,'a']]
 */
 
 const generateArray = (str) => {
+    let strArr = str.split("")
+    let response = []
+
     if (str === "") {
         return []
     }
 
-  
+
+
+    return response
 }
 
 module.exports = generateArray

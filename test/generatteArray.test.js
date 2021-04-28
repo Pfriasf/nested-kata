@@ -8,6 +8,14 @@ describe('Generate Array function', () => {
     })
 
     it("Should return an array that sums all the repeating characters", () => {
+
       expect(generateArray("abcd")).toEqual([[1, 'a'], [1, 'b'], [1, 'c'], [1, 'd']]);
+
+    });
+
+    it("Should return an array that sums all the repeating characters", () => {
+
+      expect(generateArray("aaaaaaaabaaaa")).toEqual([[8,'a'], [1,'b'], [4,'a']]);
+      
     });
 })
