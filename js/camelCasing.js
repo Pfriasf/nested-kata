@@ -11,9 +11,17 @@ camelCasing("camelCasingTest")// camel Casing Test
 
 
 const camelCasing = (str) => {
+    let strArr = str.split("");
+
     if (str === "") {
         return ""
     }
+
+    strArr.forEach((element, index) => {
+      /[A-Z]/.test(element) ? (strArr[index] = ` ${element}`) : null;
+    });
+
+    return strArr.join("");
 }
 
 module.exports = camelCasing
