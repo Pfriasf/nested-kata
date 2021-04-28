@@ -16,7 +16,7 @@ const alphabetPosition = (text) => {
     let response = [];
     let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
     for (let char of text) {
-        /[a-z]/.test(char)
+        /[a-z]/i.test(char)
          ? response.push(alphabet.indexOf(char.toLowerCase()) + 1)
          : null;
     }
