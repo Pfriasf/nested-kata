@@ -1,4 +1,4 @@
-const generateArray = require("..")
+const generateArray = require("../js/generateArray")
 
 describe('Generate Array function', () => {
 
